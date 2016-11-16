@@ -1,1 +1,14 @@
 C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\bin\Debug\NapierBank.exe.config
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\bin\Debug\NapierBank.exe
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\bin\Debug\NapierBank.pdb
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.csprojResolveAssemblyReference.cache
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\MainWindow.g.cs
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\App.g.cs
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank_MarkupCompile.cache
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank_MarkupCompile.lref
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\MainWindow.baml
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.g.resources
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.Properties.Resources.resources
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.csproj.GenerateResource.Cache
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.exe
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.pdb
