@@ -27,13 +27,19 @@ namespace NapierBank
                     {
                         SMS smsm = new SMS(body, messageHeader);
                         MessageList.smsList.Add(smsm);
+                        Serializer.Json(smsm);
+                        CleanMessage cm = new CleanMessage(smsm);
+                        cm.Show();
                         break;
                     }
                 case ('E'):
                     {
                         Email emailm = new Email(body, messageHeader);
-                        emailm.URLRemoval(emailm.MessageText);
+                        emailm.MessageText = (emailm.URLRemoval(emailm.MessageText));
                         MessageList.emailList.Add(emailm);
+                        Serializer.Json(emailm);
+                        CleanMessage cm = new CleanMessage(emailm);
+                        cm.Show();
 
                         break;
                     }
@@ -41,7 +47,9 @@ namespace NapierBank
                     {
                         Tweet tweetm = new Tweet(body, messageHeader);
                         MessageList.tweetList.Add(tweetm);
-                        
+                        Serializer.Json(tweetm);
+                        CleanMessage cm = new CleanMessage(tweetm);
+                        cm.Show();
 
                         break;
                     }

@@ -11,46 +11,62 @@ namespace NapierBank
 {
     class Serializer
     {
-        [DataContract]
-        class Spell
+        public static void Json(Email m)
         {
-            [DataMember(Name = "cast", IsRequired = true)]
-            public String cast;
+            DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(Email));
+            MemoryStream ms = new MemoryStream();
+            
+            js.WriteObject(ms, m);
+            string st = "";
+            
+            ms.Position = 0;
+            StreamReader sr = new StreamReader(ms);
+            st = sr.ReadToEnd();
+            System.IO.File.AppendAllText(".\\test.json", st + Environment.NewLine);
 
-            [DataMember(Name = "cooldown", IsRequired = true)]
-            public String cooldown;
-
-            [DataMember(Name = "powerCost", IsRequired = true)]
-            public String cost;
-
-            [DataMember(Name = "description", IsRequired = true)]
-            public String description;
-
-            [DataMember(Name = "icon", IsRequired = false)]
-            public String icon;
-
-            [DataMember(Name = "id", IsRequired = true)]
-            public Int16 id;
-
-            [DataMember(Name = "name", IsRequired = true)]
-            public String name;
-
-            [DataMember(Name = "range", IsRequired = true)]
-            public String range;
+          
+            sr.Close();
+            ms.Close();
+           
         }
 
-        DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(List<string>));
-        MemoryStream ms = new MemoryStream();
-        js.WriteObject(ms, frostShock);
+        public static void Json(Tweet t)
+        {
+            DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(Tweet));
+            MemoryStream ms = new MemoryStream();
 
-            
+            js.WriteObject(ms, t);
+            string st = "";
 
-     Console.WriteLine("\r\nUdemy.com - Serializing and Deserializing JSON in C#\r\n");
-     ms.Position = 0;
-     StreamReader sr = new StreamReader(ms);
-        Console.WriteLine(sr.ReadToEnd());
-     sr.Close();
-     ms.Close();
+            ms.Position = 0;
+            StreamReader sr = new StreamReader(ms);
+            st = sr.ReadToEnd();
+            System.IO.File.AppendAllText(".\\test.json", st + Environment.NewLine);
+
+
+            sr.Close();
+            ms.Close();
+
+        }
+
+        public static void Json(SMS s)
+        {
+            DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(SMS));
+            MemoryStream ms = new MemoryStream();
+
+            js.WriteObject(ms, s);
+            string st = "";
+
+            ms.Position = 0;
+            StreamReader sr = new StreamReader(ms);
+            st = sr.ReadToEnd();
+            System.IO.File.AppendAllText(".\\test.json", st + Environment.NewLine);
+
+
+            sr.Close();
+            ms.Close();
+
+        }
 
     }
 }

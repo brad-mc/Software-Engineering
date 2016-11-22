@@ -1,0 +1,24 @@
+﻿<Window x:Class="NapierBank.ViewMessages"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NapierBank"
+        mc:Ignorable="d"
+        Title="ViewMessages" Height="513.547" Width="392.364">
+    <Grid>
+        <ListBox x:Name="lstSMS" HorizontalAlignment="Left" Height="70" Margin="10,135,0,0" VerticalAlignment="Top" Width="364" SelectionChanged="lstSMS_SelectionChanged"/>
+        <Label x:Name="lblSMS" Content="SMS" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstEmail" HorizontalAlignment="Left" Height="70" Margin="10,241,0,0" VerticalAlignment="Top" Width="364" SelectionChanged="lstEmail_SelectionChanged"/>
+        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="114" VerticalAlignment="Top" Width="291" Source="Napier Bank.png" Margin="0,-4,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Napier Bank.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <ListBox x:Name="lstTweet" HorizontalAlignment="Left" Height="70" Margin="10,351,0,0" VerticalAlignment="Top" Width="364" SelectionChanged="lstTweet_SelectionChanged"/>
+        <Label x:Name="lblTweet" Content="Tweet" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnRead" Content="Read Message" HorizontalAlignment="Left" Margin="120,431,0,0" VerticalAlignment="Top" Width="117" Click="btnRead_Click"/>
+
+    </Grid>
+</Window>

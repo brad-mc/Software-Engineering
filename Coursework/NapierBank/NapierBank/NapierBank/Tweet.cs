@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 
 namespace NapierBank
 {
-    class Tweet:Message
+    [DataContract]
+    public class Tweet:Message
     {
 
         private List<string> hashTags = new List<string>();
+        [DataMember(Name = "Sender", IsRequired = true, Order = 1)]
         private string twitterID;
         private string sender;
 
         public Tweet(string tMessageText, string tMessageHeader)
         {
             MessageHeader = tMessageHeader;
+            tMessageText = tMessageText.Trim();
             string[] tokens = tMessageText.Split(' ');
-            Sender = tokens[1];
+            Sender = tokens[0];
             TwitterID = Sender;
             MessageList.mentions.Add(TwitterID);
             tMessageText = tMessageText.Replace(Sender, null);

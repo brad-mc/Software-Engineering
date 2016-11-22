@@ -16,3 +16,9 @@ C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\Nap
 C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\SendMessage.baml
 C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\TrendingAndMentions.g.cs
 C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\TrendingAndMentions.baml
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\CleanMessage.g.cs
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\CleanMessage.baml
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\FileRead.g.cs
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\FileRead.baml
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\ViewMessages.g.cs
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\ViewMessages.baml

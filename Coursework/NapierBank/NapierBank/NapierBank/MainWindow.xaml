@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NapierBank"
         mc:Ignorable="d"
-        Title="Napier Bank Message Service" Height="350" Width="525">
+        Title="Napier Bank Message Service" Height="350" Width="355.399">
     <Grid>
-        <Button x:Name="btnSendMessage" Content="Send Message" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top" Width="103" Click="btnSendMessage_Click"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="156" Source="Napier Bank.png">
+        <Button x:Name="btnSendMessage" Content="Add Message" HorizontalAlignment="Left" Margin="27,119,0,0" VerticalAlignment="Top" Width="103" Click="btnSendMessage_Click"/>
+        <Button x:Name="btnTrendMention" Content="Trending" HorizontalAlignment="Left" Margin="27,182,0,0" VerticalAlignment="Top" Width="103" Click="btnTrendMentionSIR_Click"/>
+        <Button x:Name="btnFileRead" Content="Read File" HorizontalAlignment="Left" Margin="27,218,0,0" VerticalAlignment="Top" Width="103" Click="btnFileRead_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="114" VerticalAlignment="Top" Width="291" Source="Napier Bank.png">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="Napier Bank.png"/>
             </Image.OpacityMask>
         </Image>
-        <Button x:Name="btnTrendMentionSIR" Content="Trending Mentions and SIR" HorizontalAlignment="Left" Margin="139,264,0,0" VerticalAlignment="Top" Width="162" Click="btnTrendMentionSIR_Click"/>
+        <Button x:Name="btnViewMessages" Content="View Messages" HorizontalAlignment="Left" Margin="27,151,0,0" VerticalAlignment="Top" Width="103" Click="btnViewMessages_Click"/>
     </Grid>
 </Window>

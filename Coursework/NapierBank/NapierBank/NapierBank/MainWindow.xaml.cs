@@ -75,7 +75,19 @@ namespace NapierBank
         {
             TrendingAndMentions tm = new TrendingAndMentions();
             tm.Show();
-            this.Hide();
+            //this.Hide();
+        }
+
+        private void btnFileRead_Click(object sender, RoutedEventArgs e)
+        {
+            FileRead fileread = new FileRead();
+            fileread.Show();
+        }
+
+        private void btnViewMessages_Click(object sender, RoutedEventArgs e)
+        {
+            ViewMessages vm = new ViewMessages();
+            vm.Show();
         }
     }
 }

@@ -4,14 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 
 namespace NapierBank
 {
-    class Email:Message
+    [DataContract]
+    public class Email:Message
     {
-        private string subject; 
+        [DataMember(Name = "Subject", IsRequired = true, Order = 2)]
+        private string subject;
+        [DataMember(Name = "Sender", IsRequired = true, Order = 1)]
         private string sender;
-
+        
         public Email(string eMessageText, string eMessageHeader)
         {
             
@@ -50,6 +55,15 @@ namespace NapierBank
                 }
 
                 MessageList.sirList.Add(sortcode + " " + incident);
+
+            }
+
+            foreach (string key in CSV.abreveations.Keys)
+            {
+                if (MessageText.Contains(key))
+                {
+                    MessageText = MessageText.Replace(key, key + " " + "<" + CSV.abreveations[key] + ">" + " ");
+                }
 
             }
 

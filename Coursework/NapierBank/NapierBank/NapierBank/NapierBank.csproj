@@ -56,8 +56,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CleanMessage.xaml.cs">
+      <DependentUpon>CleanMessage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CSV.cs" />
+    <Compile Include="FileRead.xaml.cs">
+      <DependentUpon>FileRead.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MessageList.cs" />
+    <Compile Include="ReadFile.cs" />
     <Compile Include="Sanitise.cs" />
     <Compile Include="SendMessage.xaml.cs">
       <DependentUpon>SendMessage.xaml</DependentUpon>
@@ -68,6 +75,17 @@
       <DependentUpon>TrendingAndMentions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tweet.cs" />
+    <Compile Include="ViewMessages.xaml.cs">
+      <DependentUpon>ViewMessages.xaml</DependentUpon>
+    </Compile>
+    <Page Include="CleanMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FileRead.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,6 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TrendingAndMentions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewMessages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
