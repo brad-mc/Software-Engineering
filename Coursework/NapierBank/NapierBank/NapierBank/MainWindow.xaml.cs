@@ -20,7 +20,7 @@ namespace NapierBank
     /// </summary>
     public partial class MainWindow : Window
     {
-
+       
         char sms = 'S';
         char email = 'E';
         char tweet = 'T';
@@ -31,25 +31,28 @@ namespace NapierBank
         public MainWindow()
         {
             InitializeComponent();
+            CSV.readCSV();
         }
 
         private void btnSanitize_Click(object sender, RoutedEventArgs e)
         {
-            message = txtMessage.Text;
+
+            CSV.readCSV();
+            //message = txtMessage.Text;
             messageHeader = message.Substring(0, 10);
-            body = txtMessage.Text;
+           // body = txtMessage.Text;
             messageType = messageHeader[0];
 
             switch (messageType)
             {
                 case ('S'):
                     {
-                        SMS smsm = new SMS();
+                       // SMS smsm = new SMS();
                         break;
                     }
                 case ('E'):
                     {
-                        Email emailm = new Email();
+                        Email emailm = new Email(body, messageHeader);
                         break;
                     }
                 case ('T'):
@@ -59,6 +62,13 @@ namespace NapierBank
                         break;
                     }
             }
+        }
+
+        private void btnSendMessage_Click(object sender, RoutedEventArgs e)
+        {
+            SendMessage sm = new SendMessage();
+            sm.Show();
+            this.Hide();
         }
     }
 }

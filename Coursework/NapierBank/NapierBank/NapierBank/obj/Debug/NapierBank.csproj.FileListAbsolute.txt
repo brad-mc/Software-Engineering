@@ -12,3 +12,5 @@ C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\Nap
 C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.csproj.GenerateResource.Cache
 C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.exe
 C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\NapierBank.pdb
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\SendMessage.g.cs
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBank\obj\Debug\SendMessage.baml

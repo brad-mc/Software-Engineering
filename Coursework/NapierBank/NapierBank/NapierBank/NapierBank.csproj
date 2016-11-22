@@ -55,7 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CSV.cs" />
     <Compile Include="MessageList.cs" />
+    <Compile Include="Sanitise.cs" />
+    <Compile Include="SendMessage.xaml.cs">
+      <DependentUpon>SendMessage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SMS.cs" />
     <Compile Include="Tweet.cs" />
     <Page Include="MainWindow.xaml">
@@ -71,6 +76,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SendMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Message.cs" />
@@ -96,6 +105,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="textwords.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

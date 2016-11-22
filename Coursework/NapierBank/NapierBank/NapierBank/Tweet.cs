@@ -10,16 +10,20 @@ namespace NapierBank
     {
 
         List<string> hashTags = new List<string>();
-        string twitterID;
+        private string twitterID;
+        private string sender;
 
         public Tweet(string tMessageText, string tMessageHeader)
         {
-            messageHeader = tMessageHeader;
-            messageText = tMessageText;
+            MessageHeader = tMessageHeader;
+            string[] tokens = MessageText.Split(' ');
+            Sender = tokens[1];
+            TwitterID = Sender;
+            tMessageText = tMessageText.Replace(Sender, null);
+            tMessageText = tMessageText.Trim();
+            MessageText = tMessageText;
 
-            string[] tokens = messageText.Split(' ');
-            sender = tokens[1];
-            twitterID = sender;
+            
 
             foreach (string s in tokens)
             {
@@ -29,8 +33,32 @@ namespace NapierBank
                 }
             }
 
+                foreach (string key in CSV.abreveations.Keys)
+                {
+                if (MessageText.Contains(key))
+                {
+                    MessageText = MessageText.Replace(key, key + " " + "<" + CSV.abreveations[key] + ">" + " ");
+                }
+                    
+                }
+            }
 
-
+        public string Sender
+        {
+            get { return sender; }
+            set { sender = value; }
         }
+
+        public string TwitterID
+        {
+            get { return twitterID; }
+            set { twitterID = value; }
+        }
+
+
+
     }
-}
+    }
+
+
+

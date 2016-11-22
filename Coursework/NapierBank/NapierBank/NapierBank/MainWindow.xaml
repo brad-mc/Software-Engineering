@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="Napier Bank Message Service" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="txtMessage" HorizontalAlignment="Left" Height="178" Margin="180,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="309"/>
-        <Button x:Name="btnSanitize" Content="Sanitize" HorizontalAlignment="Left" Margin="274,264,0,0" VerticalAlignment="Top" Width="126" Height="32" Click="btnSanitize_Click"/>
-
+        <Button x:Name="btnSendMessage" Content="Send Message" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="103" Click="btnSendMessage_Click"/>
     </Grid>
 </Window>
