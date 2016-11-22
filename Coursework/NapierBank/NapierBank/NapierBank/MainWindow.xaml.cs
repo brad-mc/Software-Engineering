@@ -68,6 +68,13 @@ namespace NapierBank
         {
             SendMessage sm = new SendMessage();
             sm.Show();
+           // this.Hide();
+        }
+
+        private void btnTrendMentionSIR_Click(object sender, RoutedEventArgs e)
+        {
+            TrendingAndMentions tm = new TrendingAndMentions();
+            tm.Show();
             this.Hide();
         }
     }

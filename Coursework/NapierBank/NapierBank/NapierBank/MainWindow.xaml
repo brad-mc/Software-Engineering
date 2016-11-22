@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Napier Bank Message Service" Height="350" Width="525">
     <Grid>
-        <Button x:Name="btnSendMessage" Content="Send Message" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="103" Click="btnSendMessage_Click"/>
+        <Button x:Name="btnSendMessage" Content="Send Message" HorizontalAlignment="Left" Margin="10,264,0,0" VerticalAlignment="Top" Width="103" Click="btnSendMessage_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="156" Source="Napier Bank.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Napier Bank.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="btnTrendMentionSIR" Content="Trending Mentions and SIR" HorizontalAlignment="Left" Margin="139,264,0,0" VerticalAlignment="Top" Width="162" Click="btnTrendMentionSIR_Click"/>
     </Grid>
 </Window>

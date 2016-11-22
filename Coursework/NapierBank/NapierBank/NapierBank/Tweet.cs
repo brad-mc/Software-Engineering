@@ -9,16 +9,17 @@ namespace NapierBank
     class Tweet:Message
     {
 
-        List<string> hashTags = new List<string>();
+        private List<string> hashTags = new List<string>();
         private string twitterID;
         private string sender;
 
         public Tweet(string tMessageText, string tMessageHeader)
         {
             MessageHeader = tMessageHeader;
-            string[] tokens = MessageText.Split(' ');
+            string[] tokens = tMessageText.Split(' ');
             Sender = tokens[1];
             TwitterID = Sender;
+            MessageList.mentions.Add(TwitterID);
             tMessageText = tMessageText.Replace(Sender, null);
             tMessageText = tMessageText.Trim();
             MessageText = tMessageText;
@@ -30,6 +31,7 @@ namespace NapierBank
                 if (s.StartsWith("#"))
                 {
                     hashTags.Add(s);
+                    MessageList.hashTags.Add(s);
                 }
             }
 
@@ -53,6 +55,12 @@ namespace NapierBank
         {
             get { return twitterID; }
             set { twitterID = value; }
+        }
+
+        public List<string> HashTags
+        {
+            // no setter
+            get { return hashTags; }
         }
 
 

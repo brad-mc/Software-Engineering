@@ -101,12 +101,20 @@ namespace NapierBank
                 case 2:
                     {
                         id = id + 1;
-                        message = "S" + id + " " + txtSender.Text + " " + txtMessage.Text;
+                        message = "T" + id + " " + txtSender.Text + " " + txtMessage.Text;
                         Sanitise.SanitiseMessage(message);
                         break;
                     }
 
             }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+           // MainWindow mw = new MainWindow();
+            this.Hide();
+          //  mw.Show();
+            
         }
     }
 }

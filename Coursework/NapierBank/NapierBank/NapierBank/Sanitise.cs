@@ -26,18 +26,22 @@ namespace NapierBank
                 case ('S'):
                     {
                         SMS smsm = new SMS(body, messageHeader);
+                        MessageList.smsList.Add(smsm);
                         break;
                     }
                 case ('E'):
                     {
                         Email emailm = new Email(body, messageHeader);
                         emailm.URLRemoval(emailm.MessageText);
+                        MessageList.emailList.Add(emailm);
 
                         break;
                     }
                 case ('T'):
                     {
                         Tweet tweetm = new Tweet(body, messageHeader);
+                        MessageList.tweetList.Add(tweetm);
+                        
 
                         break;
                     }

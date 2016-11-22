@@ -36,15 +36,20 @@ namespace NapierBank
                 {
                     if (s.Contains(tokens[1]))
                     {
-                        incident = incident + s;
+                        incident = tokens[1];
                     }
-                    if (tokens[2].Contains(s))
+                    try
                     {
-                        incident = incident + " " + s;
+                        if (s.Contains(tokens[2]))
+                        {
+                            incident = incident + " " + tokens[2];
+                        }
                     }
-
+                    catch (Exception e) { }
 
                 }
+
+                MessageList.sirList.Add(sortcode + " " + incident);
 
             }
 
