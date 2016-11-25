@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using System.Text.RegularExpressions;
 
 namespace NapierBank
 {
@@ -24,13 +25,19 @@ namespace NapierBank
             string[] tokens = tMessageText.Split(' ');
             Sender = tokens[0];
             TwitterID = Sender;
-            MessageList.mentions.Add(TwitterID);
+            
             tMessageText = tMessageText.Replace(Sender, null);
             tMessageText = tMessageText.Trim();
             MessageText = tMessageText;
 
-            
+            var mentionParser = new  Regex("((@)((?:[A-Za-z0-9-_]*)))");
+            var match = mentionParser.Match(MessageText);
+            if (match.Success)
+            {
+                MessageList.mentions.Add(match.Value);
+            }
 
+            //Finds hashtags and adds them to a list to be catalogued
             foreach (string s in tokens)
             {
                 if (s.StartsWith("#"))
@@ -39,8 +46,8 @@ namespace NapierBank
                     MessageList.hashTags.Add(s);
                 }
             }
-
-                foreach (string key in CSV.abreveations.Keys)
+            //Expands the abbreviations in the message
+            foreach (string key in CSV.abreveations.Keys)
                 {
                 if (MessageText.Contains(key))
                 {

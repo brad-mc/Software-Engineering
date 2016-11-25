@@ -70,6 +70,9 @@
       <DependentUpon>SendMessage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Serializer.cs" />
+    <Compile Include="SIRView.xaml.cs">
+      <DependentUpon>SIRView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SMS.cs" />
     <Compile Include="TrendingAndMentions.xaml.cs">
       <DependentUpon>TrendingAndMentions.xaml</DependentUpon>
@@ -100,6 +103,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SendMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SIRView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

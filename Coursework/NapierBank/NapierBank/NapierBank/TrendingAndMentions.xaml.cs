@@ -22,17 +22,14 @@ namespace NapierBank
         public TrendingAndMentions()
         {
             InitializeComponent();
-
+            //Sorts the hashtag list by grouping the common values to create a trending list
             var trending = MessageList.hashTags.GroupBy(x => x).Select(g => new { Value = g.Key, Count = g.Count() }).OrderByDescending(x => x.Count);
             foreach (var x in trending)
             {
                 lstTrending.Items.Add(x.Value);
             }
 
-            foreach(string s in MessageList.sirList)
-            {
-                lstSIR.Items.Add(s);
-            }
+            
             foreach (string s in MessageList.mentions)
             {
                 lst_Mentions.Items.Add(s);

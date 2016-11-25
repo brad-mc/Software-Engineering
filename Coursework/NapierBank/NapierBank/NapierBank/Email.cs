@@ -16,10 +16,12 @@ namespace NapierBank
         private string subject;
         [DataMember(Name = "Sender", IsRequired = true, Order = 1)]
         private string sender;
+        private string sirSortCode;
+        private string sirIncident;
         
         public Email(string eMessageText, string eMessageHeader)
         {
-            
+            //Extracts the information from the text string passed to it.
             MessageHeader = eMessageHeader;
             Sender = GetSender(eMessageText);
             eMessageText = eMessageText.Replace(Sender, null);
@@ -32,32 +34,33 @@ namespace NapierBank
             string[] tokens = MessageText.Split(' ');
             List<string> tokensList = new List<string>(tokens);
            
+            //Determines if the email message is a Serious Incident one
             if (Subject.StartsWith("SIR"))
             {
-                string sortcode= "";
-                string incident= "";
-                sortcode = tokens[0];
+                
+                
+                SIRSortCode= tokens[0];
                 foreach(string s in MessageList.sirType)
                 {
                     if (s.Contains(tokens[1]))
                     {
-                        incident = tokens[1];
+                        SIRIncident = tokens[1];
                     }
                     try
                     {
                         if (s.Contains(tokens[2]))
                         {
-                            incident = incident + " " + tokens[2];
+                            SIRIncident = SIRIncident + " " + tokens[2];
                         }
                     }
                     catch (Exception e) { }
 
                 }
 
-                MessageList.sirList.Add(sortcode + " " + incident);
+                
 
             }
-
+            //Expands the abbreviations in the message
             foreach (string key in CSV.abreveations.Keys)
             {
                 if (MessageText.Contains(key))
@@ -85,7 +88,19 @@ namespace NapierBank
             set { sender = value; }
         }
 
+        public string SIRSortCode
+        {
+            get { return sirSortCode; }
+            set { sirSortCode = value; }
+        }
 
+        public string SIRIncident
+        {
+            get { return sirIncident; }
+            set { sirIncident = value; }
+        }
+
+        //Extracts the sender from the message string using a reglar expression
         public string GetSender (string message)
         {
             string emailSender="";

@@ -11,6 +11,7 @@ namespace NapierBank
 {
     class Serializer
     {
+        // This method serialises and outputs the message sent to in JSON format
         public static void Json(Email m)
         {
             DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(Email));
@@ -22,14 +23,14 @@ namespace NapierBank
             ms.Position = 0;
             StreamReader sr = new StreamReader(ms);
             st = sr.ReadToEnd();
-            System.IO.File.AppendAllText(".\\test.json", st + Environment.NewLine);
+            System.IO.File.AppendAllText(".\\Messages.json", st + Environment.NewLine);
 
           
             sr.Close();
             ms.Close();
            
         }
-
+        // This method serialises and outputs the message sent to in JSON format
         public static void Json(Tweet t)
         {
             DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(Tweet));
@@ -48,7 +49,7 @@ namespace NapierBank
             ms.Close();
 
         }
-
+        // This method serialises and outputs the message sent to in JSON format
         public static void Json(SMS s)
         {
             DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(SMS));

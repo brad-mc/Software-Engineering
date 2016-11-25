@@ -1,0 +1,7 @@
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBankTest\bin\Debug\NapierBankTest.dll
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBankTest\bin\Debug\NapierBankTest.pdb
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBankTest\bin\Debug\NapierBank.exe
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBankTest\bin\Debug\NapierBank.pdb
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBankTest\obj\Debug\NapierBankTest.csprojResolveAssemblyReference.cache
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBankTest\obj\Debug\NapierBankTest.dll
+C:\Users\Bradley\Documents\Napier\Software-Engineering\Coursework\NapierBank\NapierBank\NapierBankTest\obj\Debug\NapierBankTest.pdb

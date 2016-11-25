@@ -11,7 +11,7 @@ namespace NapierBank
     class ReadFile
     {
         
-
+        //This method uses a regular expression to break down the messages contained in the file and displays them on screen
         public static void read(string filepath)
         {
             

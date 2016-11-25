@@ -9,12 +9,12 @@
     <Grid>
         <Label x:Name="lblType" Content="Type" HorizontalAlignment="Left" Margin="58,101,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblSender" Content="Sender" HorizontalAlignment="Left" Margin="58,139,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="23" Margin="143,143,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="txtSender" HorizontalAlignment="Left" Height="23" Margin="143,143,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144" IsEnabled="False"/>
         <Label x:Name="lblSubject" Content="Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,180,0,0"/>
-        <TextBox x:Name="txtSubject" HorizontalAlignment="Left" Height="23" Margin="143,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBox x:Name="txtMessage" HorizontalAlignment="Left" Height="107" Margin="143,231,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="txtSubject" HorizontalAlignment="Left" Height="23" Margin="143,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144" IsEnabled="False" MaxLength="20"/>
+        <TextBox x:Name="txtMessage" HorizontalAlignment="Left" Height="107" Margin="143,231,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144" IsEnabled="False"/>
         <Label x:Name="lblMessage" Content="Message" HorizontalAlignment="Left" Margin="58,231,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtType" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="143,101,0,0" IsEnabled="False"/>
+        <TextBox x:Name="txtType" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="144" Margin="143,101,0,0" IsEnabled="False"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="215" Source="Napier Bank.png">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="Napier Bank.png"/>

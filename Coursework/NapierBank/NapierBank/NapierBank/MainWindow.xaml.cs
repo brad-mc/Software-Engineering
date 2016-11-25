@@ -37,31 +37,6 @@ namespace NapierBank
         private void btnSanitize_Click(object sender, RoutedEventArgs e)
         {
 
-            CSV.readCSV();
-            //message = txtMessage.Text;
-            messageHeader = message.Substring(0, 10);
-           // body = txtMessage.Text;
-            messageType = messageHeader[0];
-
-            switch (messageType)
-            {
-                case ('S'):
-                    {
-                       // SMS smsm = new SMS();
-                        break;
-                    }
-                case ('E'):
-                    {
-                        Email emailm = new Email(body, messageHeader);
-                        break;
-                    }
-                case ('T'):
-                    {
-                        Tweet tweetm = new Tweet(body, messageHeader);
-
-                        break;
-                    }
-            }
         }
 
         private void btnSendMessage_Click(object sender, RoutedEventArgs e)
@@ -88,6 +63,12 @@ namespace NapierBank
         {
             ViewMessages vm = new ViewMessages();
             vm.Show();
+        }
+
+        private void btnViewSIR_Click(object sender, RoutedEventArgs e)
+        {
+            SIRView sir = new SIRView();
+            sir.Show();
         }
     }
 }

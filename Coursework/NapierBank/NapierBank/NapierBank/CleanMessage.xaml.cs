@@ -23,7 +23,7 @@ namespace NapierBank
         public CleanMessage(Email m)
         {
             InitializeComponent();
-
+            //Populates the text boxes for the corresponsing message type
             txtType.Text = "Email";
             txtSender.Text = m.Sender;
             txtSubject.Text = m.Subject;
@@ -34,7 +34,7 @@ namespace NapierBank
         public CleanMessage(SMS m)
         {
             InitializeComponent();
-
+            //Populates the text boxes for the corresponsing message type
             txtType.Text = "SMS";
             txtSender.Text = m.Sender;
             lblSubject.Visibility = Visibility.Collapsed;
@@ -46,7 +46,7 @@ namespace NapierBank
         public CleanMessage(Tweet m)
         {
             InitializeComponent();
-
+            //Populates the text boxes for the corresponsing message type
             txtType.Text = "Tweet";
             txtSender.Text = m.Sender;
             lblSubject.Visibility = Visibility.Collapsed;

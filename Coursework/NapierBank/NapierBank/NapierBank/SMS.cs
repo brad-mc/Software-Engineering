@@ -23,8 +23,8 @@ namespace NapierBank
             sMessageText = sMessageText.Trim();
             MessageText = sMessageText;
 
-            
 
+            //Expands the abbreviations in the message
             foreach (string key in CSV.abreveations.Keys)
             {
                 if (MessageText.Contains(key))

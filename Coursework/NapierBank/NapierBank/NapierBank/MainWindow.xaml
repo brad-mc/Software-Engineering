@@ -16,5 +16,6 @@
             </Image.OpacityMask>
         </Image>
         <Button x:Name="btnViewMessages" Content="View Messages" HorizontalAlignment="Left" Margin="27,151,0,0" VerticalAlignment="Top" Width="103" Click="btnViewMessages_Click"/>
+        <Button x:Name="btnViewSIR" Content="View SIR" HorizontalAlignment="Left" Margin="27,257,0,0" VerticalAlignment="Top" Width="103" Click="btnViewSIR_Click"/>
     </Grid>
 </Window>

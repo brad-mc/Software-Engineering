@@ -9,7 +9,7 @@ namespace NapierBank
     class Sanitise
     {
 
-
+        //This method determines the message type and send the message to create the corresponding object
         public static void SanitiseMessage(string message)
         {
 
@@ -38,7 +38,8 @@ namespace NapierBank
                         emailm.MessageText = (emailm.URLRemoval(emailm.MessageText));
                         MessageList.emailList.Add(emailm);
                         Serializer.Json(emailm);
-                        CleanMessage cm = new CleanMessage(emailm);
+                        if (emailm.Subject.StartsWith("SIR")) { MessageList.sirList.Add(emailm); }
+                            CleanMessage cm = new CleanMessage(emailm);
                         cm.Show();
 
                         break;

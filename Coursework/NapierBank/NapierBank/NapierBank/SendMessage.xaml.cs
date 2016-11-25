@@ -32,15 +32,20 @@ namespace NapierBank
         }
 
         
-
+        //This button allows the user to input messages in plain text
         private void btnSendMessage_Click(object sender, RoutedEventArgs e)
         {
 
             string message;
-
-            message = txtMessageHeader.Text + txtMessage.Text;
-            Sanitise.SanitiseMessage(message);
-                      
+            try
+            {
+                message = txtMessageHeader.Text + txtMessage.Text;
+                Sanitise.SanitiseMessage(message);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Invalid Entry");
+            }    
                
         }
 

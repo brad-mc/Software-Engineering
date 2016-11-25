@@ -5,18 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NapierBank"
         mc:Ignorable="d"
-        Title="TrendingAndMentions" Height="300" Width="480.296">
-    <Grid>
+        Title="TrendingAndMentions" Height="415.057" Width="336.262">
+    <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="165*"/>
             <ColumnDefinition Width="307*"/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="lstTrending" HorizontalAlignment="Left" Height="191" Margin="10,55,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="label" Content="Trending" HorizontalAlignment="Left" Margin="26,24,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lst_Mentions" HorizontalAlignment="Left" Height="191" Margin="163,55,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2"/>
-        <Label x:Name="label_Copy" Content="Mentions" HorizontalAlignment="Left" Margin="15.788,24,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <ListBox x:Name="lstSIR" HorizontalAlignment="Left" Height="191" Margin="176.788,55,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
-        <Label x:Name="label_Copy1" Content="SIR List" HorizontalAlignment="Left" Margin="193.788,24,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <ListBox x:Name="lstTrending" HorizontalAlignment="Left" Height="191" Margin="10,161,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="label" Content="Trending" HorizontalAlignment="Left" Margin="27,130,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lst_Mentions" HorizontalAlignment="Left" Height="191" Margin="181,161,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy" Content="Mentions" HorizontalAlignment="Left" Margin="197,130,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="114" VerticalAlignment="Top" Width="291" Source="Napier Bank.png" Margin="0,-4,0,0" Grid.ColumnSpan="2">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Napier Bank.png"/>
+            </Image.OpacityMask>
+        </Image>
 
     </Grid>
 </Window>

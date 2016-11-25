@@ -23,7 +23,7 @@ namespace NapierBank
         {
             InitializeComponent();
         }
-
+        //This button sends the path entered into the text box to a method that reads the messages in the text file
         private void btnRead_Click(object sender, RoutedEventArgs e)
         {
             try
